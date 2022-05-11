@@ -110,12 +110,13 @@
         padding: .5rem 1rem;
     }
     .nav-items li:hover {
-        padding: 4rem 0;
-        background-color: rgb(255, 153, 0);
+        padding: 4rem 0rem;
         color: black;
-        font-weight: 600;
     }
     .nav-items li a:hover {
+        padding: 4rem 1rem;
+        font-weight: 600;
+        background-color: rgb(255, 153, 0);
         color: black;
     }
 }
