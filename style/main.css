@@ -67,6 +67,7 @@
 
 .collapse-social {
     height: 50px;
+    margin: 10px 0;
 }
 
 .nav-social-icon a {
@@ -99,5 +100,22 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    .nav-link {
+        border-top: 0;
+    }
+    .nav-link a {
+        font-size: 20px;
+        color: #ddd;
+        padding: .5rem 1rem;
+    }
+    .nav-items li:hover {
+        padding: 4rem 0;
+        background-color: rgb(255, 153, 0);
+        color: black;
+        font-weight: 600;
+    }
+    .nav-items li a:hover {
+        color: black;
     }
 }
