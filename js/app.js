@@ -1,41 +1,51 @@
-// const getElement = (selector) => {
-//     const element = document.querySelector(selector)
-//     if (element) return element
-//     throw Error(
-//         `Please double check your class names, there is no ${selector} class`
-
-//     )
-// }
-
-// const links = getElement('.nav-links')
-// const navBtnDOM = getElement('.nav-btn')
-
-// navBtnDOM.addEventListener('click', () => {
-//     links.classList.toggle('show-links');
-// });
-
-// console.log('ere');
+// $(document).ready(function() {
+//     $nav = $('.nav');
+//     $toggleCollapse = $('.toggle-collapse');
+//     $toggleCollapse.click(function() {
+//         $nav.toggleClass('collapse-menu');
+//     })
+// })
 
 
-// header toggle btn 
-const getElement = (selector) => {
-    const element = document.querySelector(selector)
 
+// $(document).ready(function() {
+//         $nav = $('.nav-header');
+//         $toggleCollapse = $('.nav-btn');
+//         $toggleCollapse.click(function() {
+//             $nav.toggleClass('collapse');
+//         })
+//     })
+
+
+
+// $(document).ready(function() {
+//     $nav = $('.nav');
+//     $toggleCollapse = $('.toggle-collapse');
+//     $toggleCollapse.click(function() {
+//         $nav.toggleClass('collapse');
+//     })
+// })
+
+
+
+//  -------  Nav BAR -----------------//
+
+
+let getElement = (selector) => {
+    let element = document.querySelector(selector)
     if (element) return element
     throw Error(
-        `Please double check your class names, there is no ${selector} class`
+        `Please double`
     )
 }
 
-const links = getElement('.nav-links')
-const navBtnDOM = getElement('.nav-btn')
+let links = getElement('.nav-items')
+let linksSocialIcons = getElement('.nav-social-icon')
+let navBtn = getElement('.nav-btn')
 
-navBtnDOM.addEventListener('click', () => {
-    links.classList.toggle('show-links')
-})
+navBtn.addEventListener('click', () => {
+    links.classList.toggle('collapse')
+    linksSocialIcons.classList.toggle('collapse-social')
+});
 
-
-// Copy right year dynamic
-const date = getElement('#date')
-const currentYear = new Date().getFullYear()
-date.textContent = currentYear
+//  -------  Nav BAR -----------------//
