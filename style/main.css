@@ -1,17 +1,57 @@
-.navbar {
+.header-top {
+    background-color: #000;
     display: flex;
-    background-color: red;
     justify-content: center;
     align-items: center;
 }
 
-.nav-header {
+.header-top-bar {
     width: 90vw;
     max-width: var(--max-width);
-    background-color: rgb(187, 255, 16);
+    /* background-color: rgb(249, 15, 15); */
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav-logo {
+.header-text p {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.header-link {
+    background-color: greenyellow;
+    padding: 0 10px;
+}
+
+.header-link a {
+    font-size: 1rem;
+    padding: 0 1rem;
+    border-right: 1px solid black;
+}
+
+.header-link a:nth-last-child(1) {
+    border: 0;
+}
+
+.header-link a:hover {
+    font-weight: 600;
+}
+
+.nav {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 90vw;
+    max-width: var(--max-width);
+    background-color: aqua;
+}
+
+.nav-brand {
     height: 6rem;
     display: flex;
     justify-content: space-between;
@@ -19,34 +59,23 @@
     background-color: blue;
 }
 
-.nav-logo-img {
-    background-color: rgb(234, 0, 133);
-}
+.nav-logo {}
 
 .nav-logo img {
     height: 80px;
     width: 100px;
 }
 
-.nav-btn {
-    padding: 0.55rem 0.55rem;
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.test-nav {
-    /* todo */
-    /* height: 0; */
-}
+.nav-btn {}
 
 .nav-menu {}
 
-.nav-items {
+.nav-links {
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    /* align-items: center; */
     text-align: center;
-    /* todo */
+    /* added code for responsive */
     height: 0;
     overflow: hidden;
 }
@@ -56,47 +85,268 @@
 }
 
 .nav-link {
-    border-top: 2px solid rgb(9, 18, 10);
+    border-top: 1px solid #000;
 }
 
-.nav-social-icon {
-    text-align: center;
-    /* margin: 10px 0; */
+.nav-link a {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.nav-link a:hover {
+    font-weight: 600;
+}
+
+.nav-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* added code for responsive */
     height: 0;
 }
 
 .collapse-social {
-    height: 50px;
-    margin: 10px 0;
+    height: 60px;
+    margin-bottom: 10px;
 }
 
-.nav-social-icon a {
-    border: 1px solid red;
-    border-radius: 50%;
+.nav-social-link a {
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
     padding: 5px;
-    /* margin: 5px; */
-    font-size: 1.5rem;
-    color: blueviolet;
+    border: 1px solid red;
+    margin: 0 2px;
+    border-radius: 50%;
+    color: #000;
+    background-color: aliceblue;
+    text-align: center;
 }
 
-.nav-social-icon a:hover {
-    background-color: antiquewhite;
-    color: black;
+.nav-social-link a:hover {
+    color: rgb(255, 0, 179);
+    background-color: rgb(0, 0, 0);
 }
+
+
+/* ------------ Main Site Section ---------------- */
+
+.main-section {
+    /*background-color: rgb(233, 190, 190);
+     margin: 0 auto; 
+    /* min-height: calc(100vh - (6rem + 6rem)); */
+}
+
+
+/* ------------ Hero Banner ----------------- */
+
+.banner-background {
+    background-image: url("../images/Background-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-background h3,
+h1 {
+    color: #fff;
+}
+
+.banner-btn {
+    position: relative;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    border: none;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-weight: 700;
+    z-index: 1;
+    /* transition: all 1s ease 0s; */
+}
+
+.banner-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(253, 187, 45);
+    background: linear-gradient(0deg, rgba(253, 187, 45, 1) 0%, rgba(34, 193, 195, 1) 100%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.banner-btn:hover::before {
+    opacity: 1;
+}
+
+
+/* ----- X ------- Hero Banner --------- X ---- */
+
+
+/* ------------- Blog Carousel --------------- */
+
+.blog {
+    background-image: url(../images/Abract01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+.blog-container {
+    padding-top: 6rem;
+    /* max-width: 1200px;
+    margin: 0 auto; */
+    margin: 0 5vw;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.blog-title {
+    padding: 2rem 0;
+}
+
+.blog-span {
+    display: block;
+}
+
+.owl-nav {
+    position: absolute;
+    top: -30px;
+    /* background-color: red; */
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-theme .owl-nav .owl-prev .owl-nav-prev,
+.owl-theme .owl-nav .owl-next .owl-nav-next {
+    color: rgb(19, 21, 16);
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: transparent;
+}
+
+
+/* ----- X ------ Blog Carousel --------- X ----- */
+
+
+/* ---------- blog-post-content  ------- - */
+
+.blog-posts {
+    margin: 0 5vw;
+}
+
+.blog-post-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.blog-post-content {
+    margin-bottom: 5rem;
+}
+
+.blog-post-image,
+.blog-post-title {
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.blog-post-image img {
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+
+.blog-post-image img:hover {
+    transform: scale(1.3);
+}
+
+.blog-post-info {
+    background-color: aqua;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+}
+
+.blog-post-title a {
+    color: rgb(37, 51, 47);
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pagination a {
+    padding: 0 15px;
+    font-size: 22px;
+}
+
+.pagination a:hover {
+    background-color: rgb(213, 22, 22);
+    color: #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.pagination .active-page {
+    border: 2px solid red;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+
+/* --- X ------- blog-content ---- X --- */
+
+
+/* --- X --------- Main Site Section ------------- X --- */
 
 @media screen and (min-width: 992px) {
+    .nav {
+        background-color: #000;
+    }
     .nav-btn {
         display: none;
     }
-    .nav-header {
+    .navbar {
+        /* height: 6rem; */
+        background-color: red;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
     }
-    .nav-items,
-    .nav-social-icon {
-        height: 4rem;
+    .nav-links,
+    .nav-social-link {
+        height: 6rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -106,14 +356,17 @@
     }
     .nav-link a {
         font-size: 20px;
-        color: #ddd;
-        padding: .5rem 1rem;
+        color: rgb(8, 4, 4);
+        padding: .5rem 1.3rem;
     }
-    .nav-items li:hover {
+    .nav-links {
+        background-color: aqua;
+    }
+    .nav-links li:hover {
         padding: 4rem 0rem;
-        color: black;
+        background-color: rgb(192, 255, 1);
     }
-    .nav-items li a:hover {
+    .nav-links li a:hover {
         padding: 4rem 1rem;
         font-weight: 600;
         background-color: rgb(255, 153, 0);

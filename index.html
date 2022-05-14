@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontEnd || Blog</title>
+
     <!-- favicon  -->
     <link rel="shortcut icon" href="images/favicon/fav.ico" type="image/x-icon">
+
+    <!-- OwlCarousel2-2.3.4 -->
+    <link rel="stylesheet" href="style/OwlCarousel2-2.3.4/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/OwlCarousel2-2.3.4/owl.theme.default.min.css">
+
     <!-- main css -->
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/main.css">
+
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
@@ -23,17 +30,32 @@
 <body>
 
     <!-- ---------------- Navigation ------------------ -->
-    <nav class="navbar">
-        <div class="nav-header">
-            <div class="nav-logo">
-                <a href="index.html" class="nav-logo-img">
-                    <img class="img" src="images/logo.jpg" alt="">
+    <div class="header-top">
+        <div class="header-top-bar">
+            <!-- <div></div> -->
+            <div class="header-text">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="header-link">
+                <a href="#">Contact</a>
+                <a href="mailto:hasnathrumman1234@gmail.com">Email</a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav">
+
+        <div class="navbar">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.jpg" alt="" class="img">
                 </a>
-                <button class="btn nav-btn">  <i class="fas fa-bars"></i>
+
+                <button class="btn nav-btn">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
             <div class="nav-menu">
-                <ul class="nav-items">
+                <ul class="nav-links">
                     <li class="nav-link">
                         <a href="index.html">Home</a>
                     </li>
@@ -41,30 +63,173 @@
                         <a href="category.html">Category</a>
                     </li>
                     <li class="nav-link">
-                        <a href="archive.html">Archive</a>
+                        <a href="about.html">About Us</a>
                     </li>
                     <li class="nav-link">
                         <a href="contact.html">Contact</a>
                     </li>
-
-                    <li class="nav-link">
-                        <a href="about.html">About Us </a>
-                    </li>
                 </ul>
             </div>
-            <div class="nav-social-icon">
-                <a href="https://facebook.com/hassy008"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/hassy008"><i class="fab fa-twitter"></i></a>
-                <a href="https://instagram.com/hassy008"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com/hassy008"><i class="fab fa-linkedin"></i></a>
+            <div class="nav-social-link">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-
-
-
     </nav>
 
     <!-- X ---------------- Navigation ------------------ X -->
+
+
+
+    <!-------------- Main Site Section ------------------->
+    <main class="main-section">
+        <!-------------- Hero Banner ------------------->
+
+        <section class="hero-banner">
+            <div class="banner-background">
+                <h3>Tours & Travels</h3>
+                <h1>Amazing Place On Earth</h1>
+                <a href="#"> <button class="banner-btn">Explore</button></a>
+            </div>
+        </section>
+        <!-- X --------- Hero Banner --------- X ------->
+        <!----------- Blog Carousel ----------------->
+        <section class="blog">
+            <div class="blog-container">
+                <div class="owl-carousel owl-theme blog-post">
+                    <div class="blog-content">
+                        <img src="images/Blog-post/blog1.png" alt="blog post-1">
+                        <div class="blog-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                            <button class="btn blog-btn"> Fashion</button>
+                            <span class="blog-span">2 minutes</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <img src="images/Blog-post/blog1.png" alt="blog post-1">
+                        <div class="blog-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                            <button class="btn blog-btn"> Fashion</button>
+                            <span class="blog-span">2 minutes</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <img src="images/Blog-post/blog1.png" alt="blog post-1">
+                        <div class="blog-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                            <button class="btn blog-btn"> Fashion</button>
+                            <span class="blog-span">2 minutes</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <img src="images/Blog-post/blog1.png" alt="blog post-1">
+                        <div class="blog-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                            <button class="btn blog-btn"> Fashion</button>
+                            <span class="blog-span">2 minutes</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <img src="images/Blog-post/blog1.png" alt="blog post-1">
+                        <div class="blog-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                            <button class="btn blog-btn"> Fashion</button>
+                            <span class="blog-span">2 minutes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-navigation">
+                    <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                    <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                </div>
+            </div>
+        </section>
+
+
+        <!---- X ------- Blog Carousel --------- X -------->
+
+        <!----------- Blog-post -content  ------- -->
+        <section class="blog-posts">
+            <div class="blog-post-container">
+                <div class="blog-post">
+                    <div class="blog-post-content">
+                        <div class="blog-post-image">
+                            <div><img src="images/Blog-post/blog1.png" alt=""></div>
+                            <div class="blog-post-info">
+                                <span><i class="fas fa-user text-gray"></i>Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>May 13, 2022</span>
+                                <span><i class="fas fa-comment text-gray"></i>2 Comments</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-title">
+                            <a href="#">
+                                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, voluptatum.</h2>
+                            </a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas asperiores iusto mollitia facere ducimus. Repudiandae officiis, ab, repellendus voluptatum quo eius dolorum quidem reiciendis cupiditate dicta provident natus non
+                                vel autem facere assumenda exercitationem sit rerum alias quasi dolorem accusantium.</p>
+                            <button class="btn blog-post-btn">Read More...</button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-image">
+                            <div><img src="images/Blog-post/blog2.png" alt=""></div>
+                            <div class="blog-post-info">
+                                <span><i class="fas fa-user text-gray"></i>Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>May 13, 2022</span>
+                                <span><i class="fas fa-comment text-gray"></i>2 Comments</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-title">
+                            <a href="#">
+                                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, voluptatum.</h2>
+                            </a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas asperiores iusto mollitia facere ducimus. Repudiandae officiis, ab, repellendus voluptatum quo eius dolorum quidem reiciendis cupiditate dicta provident natus non
+                                vel autem facere assumenda exercitationem sit rerum alias quasi dolorem accusantium.</p>
+                            <button class="btn blog-post-btn">Read More...</button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-image">
+                            <div><img src="images/Blog-post/blog3.png" alt=""></div>
+                            <div class="blog-post-info">
+                                <span><i class="fas fa-user text-gray"></i>Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>May 13, 2022</span>
+                                <span><i class="fas fa-comment text-gray"></i>2 Comments</span>
+                            </div>
+                        </div>
+                        <div class="blog-post-title">
+                            <a href="#">
+                                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, voluptatum.</h2>
+                            </a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas asperiores iusto mollitia facere ducimus. Repudiandae officiis, ab, repellendus voluptatum quo eius dolorum quidem reiciendis cupiditate dicta provident natus non
+                                vel autem facere assumenda exercitationem sit rerum alias quasi dolorem accusantium.</p>
+                            <button class="btn blog-post-btn">Read More...</button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="pagination">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="active-page">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-post-sidebar">SIDEBAR</div>
+            </div>
+        </section>
+        <!---  X  -------- blog-post-content  -----  X ---->
+
+    </main>
+
+    <!-- X ---------------- Main Site Section ------------------ X -->
+
+
 
     <!-- footer  -->
     <footer class="page-footer">
@@ -72,8 +237,10 @@
     </footer>
     <!-- end of footer  -->
 
-
     <script src="js/jquery/jquery-3.4.1.min.js"></script>
+
+    <script src="js/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
     <script src="js/app.js"></script>
 </body>
 
