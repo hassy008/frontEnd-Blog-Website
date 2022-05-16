@@ -163,7 +163,8 @@ h1 {
     cursor: pointer;
     background: rgb(34, 193, 195);
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    border: none;
+    border-color: #ffe900;
+    box-shadow: -4px 4px 0 #ffe900;
     border-radius: 20px;
     font-size: xx-large;
     font-weight: 700;
@@ -171,7 +172,8 @@ h1 {
     /* transition: all 1s ease 0s; */
 }
 
-.banner-btn::before {
+
+/* .banner-btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -183,7 +185,7 @@ h1 {
     z-index: -1;
     transition: opacity 0.5s linear;
     opacity: 0;
-}
+} */
 
 .banner-btn:hover::before {
     opacity: 1;
@@ -303,6 +305,9 @@ h1 {
 }
 
 .pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0 15px;
     font-size: 22px;
 }
@@ -316,6 +321,9 @@ h1 {
 }
 
 .pagination .active-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid red;
     background-color: #000;
     color: #fff;
@@ -324,11 +332,103 @@ h1 {
     width: 50px;
 }
 
+.category-list-items {
+    background-color: red;
+}
+
+.category-list-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(132, 216, 13);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.category-list-item a,
+span {
+    color: #000;
+}
+
+.popular-blog-post-info {
+    position: absolute;
+    background-color: red;
+    bottom: 0%;
+}
+
+.newsletter,
+.popular-tags {
+    padding-bottom: 3rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form-input {
+    padding: 1rem;
+    font-size: 14px;
+}
+
+.tag-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tag-list a {
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: .3rem;
+    background-color: aquamarine;
+}
+
 
 /* --- X ------- blog-content ---- X --- */
 
 
 /* --- X --------- Main Site Section ------------- X --- */
+
+
+/* -------- footer  --------- */
+
+.page-footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 2rem;
+}
+
+.footer-sign-up input {
+    padding: 5px;
+}
+
+.footer-submit-btn {
+    color: #fff;
+    background-color: aqua;
+    padding: 5px 10px;
+    margin-left: -5px;
+}
+
+.insta-imag {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.insta-imag img {
+    height: 80px;
+    width: 200px;
+    margin: 10px;
+}
+
+
+/* --- X ----- footer  ------- X -- */
 
 @media screen and (min-width: 992px) {
     .nav {
